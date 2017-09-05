@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Whiteblank</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#345b66">
+    <meta name="theme-color" content="#000000">
+
+    <link href="css/whiteblank.css" rel="stylesheet" type="text/css">
+    <link href="vendor/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!-- Piwik -->
+    <script type="text/javascript">
+     var _paq = _paq || [];
+     // tracker methods like "setCustomDimension" should be called before "trackPageView"
+     _paq.push(['trackPageView']);
+     _paq.push(['enableLinkTracking']);
+     (function() {
+         var u="//whiteblank.org/analytics/piwik/";
+         _paq.push(['setTrackerUrl', u+'piwik.php']);
+         _paq.push(['setSiteId', '1']);
+         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+     })();
+    </script>
+<!-- End Piwik Code -->
+</head>
+
+<body id="home">
+    <header class="main-header">
+        <a data-bind="click: showHome" href="#home">
+            <img id="home-logo" alt="Brand" src="img/Logo.png">
+        </a>
+        <a data-bind="click: toggleMenu" href="#0" class="nav-trigger">Menu<span></span></a>
+        <nav class="nav">
+            <ul class="top-nav">
+                <li><a href="https://www.jamendo.com/artist/498853/whiteblank" target="_blank">Jamendo</a></li>
+                <li><a href="#about" data-bind="click: showAbout">About</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- .main-header -->
+
+    <main class="main-content">
+
+        <img src="img/K7_black.png" id="home-screen" data-bind="click: homeScreenClick" alt="Home Image">
+
+        <!-- ko with: currentTrack -->
+        <div id="background-picture" data-bind="style:{backgroundImage: 'url(' + image + ')'}"> </div>
+        <div id="video-frame">
+            <iframe width="480" height="269" allowfullscreen data-bind="attr:{src: video}"></iframe>
+        </div>
+        <!-- /ko -->
+
+
+
+        <nav class="side-nav">
+            <ul>
+                <li class="label">Tracks</li>
+                <!-- ko foreach: tracks -->
+                <li class="track-list">
+                    <div data-bind="style:{backgroundImage: 'url(' + image + ')'}" class="side-nav-track-image"></div>
+                    <a data-bind="click: $parent.selectTrackFromSidebar, attr: { href: '#' + id, id: id}, text: name"></a>
+                </li>
+                <!-- /ko -->
+            </ul>
+        </nav>
+
+        <div id="spinner" class="fa fa-spinner fa-spin fa-3x fa-fw"></div>
+
+        <div id="audio-player-container" class="audio-player-wrapper">
+            <!-- ko with: currentTrack -->
+            <div class="track-banner" data-bind="style: {color: color}">
+                <div class="banner-track-name" data-bind="text: name"></div>
+                <div class="banner-buttons">
+                    <!-- ko if: info -->
+                    <button id="track-info" title="Info" data-bind="click: $parent.showInfo" class="button fa fa-info-circle" type="button"></button>
+                    <!-- /ko -->
+                    <!-- ko if: video -->
+                    <button id="track-video" title="Video" data-bind="click: $parent.showVideo" class="button fa fa-youtube-play" type="button"></button>
+                    <!-- /ko -->
+                    <!-- ko if: lyrics -->
+                    <button id="track-lyrics" title="Lyrics" data-bind="click: $parent.showLyrics" class="button fa fa-comment" type="button"></button>
+                    <!-- /ko -->
+                    <a id="track-download" title="Download" data-bind="attr: { href: source, download: name + '.mp3' }" class="button fa fa-download"></a>
+                </div>
+            </div>
+            <!-- /ko -->
+
+            <!-- Audio Player -->
+            <div data-bind="event: {mousedown: seek}" class="audio-player-progress">
+                <span data-bind="style: {width: progressBar}" class="audio-player-progress-bar"></span>
+            </div>
+            <div class="audio-player-controls">
+                <div data-bind="text: currentTime" id="current-time"></div>
+                <div class="audio-player-button-wrappers">
+                    <button data-bind="click: previous" type="button" class="button audio-player-previous fa fa-step-backward fa-2x"></button>
+                    <button data-bind="click: togglePlayPause" type="button" class="button audio-player-play-pause fa fa-play-circle fa-3x"></button>
+                    <button data-bind="click: next" type="button" class="button audio-player-next fa fa-step-forward fa-2x"></button>
+                </div>
+                <div data-bind="text: totalDuration" id="total-duration"></div>
+            </div>
+        </div>
+    </main>
+
+        <!-- Modal window -->
+        <div id="modal-window" class="modal">
+            <div class="modal-header">
+                <button data-bind="click: closeModal" type="button" class="close-modal button fa fa-times" aria-hidden="true"></button>
+                <div class="modal-title" data-bind="text: modalTitle"></div>
+            </div>
+            <div class="modal-body" data-bind="html: modalBody"></div>
+        </div>
+
+
+        <!-- About -->
+        <div id="about">
+            <div>All musics composed and written by Pierre Blanc.</div>
+            <span class="fa fa-envelope-o">&nbsp;  </span><a href="mailto:pierrecnalb@mailbox.org">pierrecnalb@mailbox.org</a>
+            <div class="portfolio">
+                <img src="img/face/3D.jpg" alt="3D" class="thumbnail-face">
+                <img src="img/face/store.jpg" alt="my face" class="thumbnail-face">
+                <img src="img/face/barbe.jpg" alt="my face" class="thumbnail-face">
+                <img src="img/face/bouche.jpg" alt="my face" class="thumbnail-face">
+                <img src="img/face/duck.jpg" alt="my face" class="thumbnail-face">
+            </div>
+        </div>
+
+        <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
+        <script src="vendor/knockout/knockout-3.4.1.js"></script>
+        <script src="js/whiteblank.js"></script>
+</body>
+
+</html>

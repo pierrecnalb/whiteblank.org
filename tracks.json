@@ -1,0 +1,66 @@
+{
+    "flight19": {
+        "name": "Flight 19",
+        "image": "img/Flight19.jpg",
+        "source": "music/Flight 19.mp3",
+        "lyrics": " <p> FT-28 to Fort Lauderdale <br> Turning left to heading 241° for 120 nautical miles <br> </p> <p> We can't find west... <br> We can't be sure of any direction... <br> Everything looks strange, even the ocean looks different... </p> <p> Oh My god ! <br> It looks like we are entering white water... <br> We are completely lost ! <br> Holy Shit! Holy Sh... </p> ",
+        "video": "https://www.dailymotion.com/embed/video/x18fvg5",
+        "color": "#DE688E",
+        "info": "Lyrics and Music: Pierre Blanc<br>Bass: Adrien Blanc"
+    },
+    "beyondTheDarkness": {
+        "name": "Beyond The Darkness",
+        "image": "img/BeyondTheDarkness.jpg",
+        "source": "music/Beyond The Darkness.mp3",
+        "lyrics": null,
+        "video": null,
+        "color": "#1784c7",
+        "info": "Music: Pierre Blanc<br>Bass: Adrien Blanc"
+    },
+    "outOfTune": {
+        "name": "Out of Tune",
+        "image": "img/OutOfTune.jpg",
+        "source": "music/Out of Tune.mp3",
+        "lyrics": " <p> My guitar doesn't play on tune <br> Cause she doesn't want just to croon <br> She wants to groan, she wants to moan <br> And sing her tone in the microphone </p> <p> And so do I... <br> And so do I... </p> <p> My guitar doesn't play on time <br> Cause she doesn't want just to chime <br> She wants to live, she wants to feel <br> How it feels to be real </p> <p> And so do I... <br> And so do I... </p>",
+        "video": null,
+        "color": "#16CB5E",
+        "info": "Lyrics and Music: Pierre Blanc<br>Bass: Adrien Blanc"
+    },
+    "bSide": {
+        "name": "B-Side",
+        "image": "img/B-Side.jpg",
+        "source": "music/B-Side.mp3",
+        "lyrics": null,
+        "video": null,
+        "color": "#FFA732",
+        "info": "Music: Pierre Blanc"
+    },
+    "leitmotiv": {
+        "name": "Leitmotiv",
+        "image": "img/Leitmotiv.jpg",
+        "source": "music/Leitmotiv.mp3",
+        "lyrics": "<p>It may just sound all the same<br>And soon you'll think it's fucking lame<br>There is so much you could blame<br>And there is nothing here to acclaim</p><p>And now it's nothing but pain<br>To hear this in vain<br>Just to hope for the refrain</p><p>Is there a place in your brain<br>That's still not insane<br>By this chord you're hearing again</p><p>The long awaited chorus<br>Makes you feel a bit more anxious<br>You thought it would be painless<br>To change everything but loudness<br>You'd like to hear it again... <br>But with sustain</p><p>It's back to the main theme<br>The same old one audio stream<br>You start to feel so serene<br>As it becomes like a routine<br></p><p>But there is one thing you fear<br>That it'll soon disappear<br>Leaving a drear tone in your ears<br></p><p>There isn't anyone near<br>For holding your tears<br>As it fades from your souvenir<br></p><p>And in the end of the verse<br>There is no way you could reverse<br>It is the biggest life's curse<br>But so is our universe<br>The only thing that remains…<br>Is sustain<br></p>",
+        "video": null,
+        "color": "#DEDC0E",
+        "info": "Lyrics and Music: Pierre Blanc<br>Bass: Adrien Blanc"
+    },
+    "timeToGo": {
+        "name": "Time To Go",
+        "image": "img/TimeToGo.jpg",
+        "source": "music/Time To Go.mp3",
+        "lyrics": "<p>I remember now what the fox once said<br> Please be responsible for what you tamed<br> I should not have taken the other way<br> Cause now my rose seems so far away<br> </p> <p>I too am going back home today<br> Here it is let me go on by myself<br> You’ve got to understand it’s too heavy<br> I cannot carry this body with me<br> </p> <p>Now it’s time to go<br> Now it’s time to go alone<br> An through my blind eyes<br> I now see the essence<br> Of my own planned obsolescence<br> </p> <p>Now it’s time to go<br> Now it’s time to go alone<br> Now it’s time to go<br> Now it’s time to go alone<br> </p> <p>My sheep is ready and the engine blows<br> I feel happy to see again my rose<br> And all the secrets in the depth of my heart<br> Are filled with beauty then fall apart<br> </p> <p>And if you’re sad or just feel lonely<br> Look at the stars and count until three<br> In one of them I shall be living<br> In one of them I shall be laughing</p>",
+        "video": null,
+        "color": "#FFFFFF",
+        "info": "Lyrics and Music: Pierre Blanc"
+    },
+    "theWhiteShadow": {
+        "name": "The White Shadow",
+        "image": "img/WhiteShadow.jpg",
+        "source": "music/The White Shadow.mp3",
+        "lyrics":"<p>Late in the night<br> I saw a strange light<br> It didn’t seem alright</p> <p>A bright white shadow <br> An afterglow<br> That was moving slow</p> <p>And through my eyes<br> I’ve seen the lies<br> And  everything’s disguise</p> <p>It blew over<br> Not long after<br> Letting me wonder</p> <p>What if the sky was sea<br> What if there was no glee<br> Would I still be me ?</p><p>What if what I see<br> was just falsity<br> Would I still be me ?</p><p>Early the morning<br> Nothing’s shining<br> Everything's routine</p> <p>Still the same song<br> I sing along<br> Why does it feel wrong</p> <p>I can't just feel<br> What is for real<br> or just what is ill</p> <p>Is life a cheater<br> A story teller<br> Just let me wonder</p><p>What if the sky was sea<br> What if there was no glee<br> Would I still be me ?</p><p>What if what I see<br> was just falsity<br> Would I still be me ?</p> ",
+        "video": null,
+        "color": "#16CB5E",
+        "info": "Lyrics and Music: Pierre Blanc<br>Bass: Adrien Blanc"
+    }
+
+}
